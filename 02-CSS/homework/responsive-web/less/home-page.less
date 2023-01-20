@@ -11,6 +11,17 @@
     p {
       padding:0 15px;
     }
+    img{
+      border-radius: 20px ;
+    }
+    @media @iphone {
+      img{
+        .imagenesH(98%, 10px, 20px);
+        position: relative;
+        left: 5px;
+      }
+      
+    }
 
   }
 
@@ -24,6 +35,15 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+    @media @iphone {
+      .ondas, .tecnologia{
+        display: none;
+      }
+      .auricular{
+        width: 100%;
+      }
+      
     }
   }
 
@@ -58,18 +78,45 @@
       }
 
       .btn {
+        .botonRegistro(rgb(109, 211, 255), @btn-bg-color, 10px);
+        @media @iphone {
+          width: 100%;
+          text-align: center;
+          padding: 20px;
+        }
+      }
+      @media @iphone {
+        width: 100%;
+
+        
       }
     }
 
     .actual-img {
       width: 46%;
-      margin-left: 4%;
+      margin-left: 0%;
 
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+
+
       }
+      @media @iphone {
+      
+        padding: 20px;
+        width: 100%;
+        
+        
+      }
+    }
+    @media @iphone {
+      margin-top: 10px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column-reverse;
+      
     }
   }
 }

@@ -1,1 +1,38 @@
 // Código de Nav acá
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: @nav-bg;
+    border: @nav-border solid 1px;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+        width: 30%;
+        padding: 10px;
+
+        li{
+            list-style: none;
+            font-weight: bold;
+
+            a{
+                text-decoration: none;
+                color: @nav-font;
+                font-size: 16px;
+
+            }
+
+        }
+    }
+    @media @iphone {
+        ul{
+            width: 100%;
+        }
+    }
+    
+    
+
+}

@@ -1,1 +1,28 @@
 // Mixins acá
+.flex(@direction, @justify, @aling){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @aling;
+}
+
+.imagenesH (@width, @margi, @borde){
+    width: @width;
+    margin-top: @margi;
+    border-radius: @borde;
+}
+.botonRegistro(@color, @background, @borde){
+    font-size: 15px;
+    font-weight: 300;
+    padding: 10px;
+    color: @color;
+    background-color: @background;
+    border-radius: @borde;
+    width: fit-content;
+    cursor: pointer;
+    &:hover{
+        background-color: @color;
+        color: @background;
+    }
+
+}
