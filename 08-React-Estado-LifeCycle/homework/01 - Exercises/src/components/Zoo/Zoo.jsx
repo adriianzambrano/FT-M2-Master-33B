@@ -25,7 +25,9 @@ export default function Zoo() {
    const handleSpecies = (event)=>{
       setZoo({
          ...zoo,
-         animals: zoo.allAnimals.filter((animal)=> animal.specie === event.target.value)
+         animals: zoo.allAnimals.filter((e)=>{
+            return e.specie === event.target.value
+         })
       })
 
    }
