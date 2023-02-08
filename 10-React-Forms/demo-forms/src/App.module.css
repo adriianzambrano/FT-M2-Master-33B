@@ -1,0 +1,11 @@
+.errors{
+
+    color: rgb(255, 0, 0);
+    border-radius: 5px;
+    border: 1px solid red;
+}
+
+.span{
+
+    color: red;
+}
